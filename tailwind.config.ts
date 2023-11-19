@@ -7,10 +7,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        monument: ['Monument', 'sans-serif'],
+        'satoshi-bold': ['Satoshi-Bold', 'sans-serif'],
+        'satoshi-medium': ['Satoshi-Medium', 'sans-serif'],
+        'satoshi-regular': ['Satoshi-Regular', 'sans-serif'],
+      },
+      colors: {
+        purple: '#AB23FF',
+        blue: '#3d8bff',
       },
     },
   },
