@@ -32,12 +32,35 @@ const Profiting: FC = ({}) => {
         <div className="col-span-1 flex justify-between">
           <div className="border-l border-grey-100 h-full" />
           <div className="w-[85%] flex align-center flex-col justify-center">
-            <Text variant="p1" className="fontFamily-satoshi-bold text-white">
+            <Text
+              variant="p1"
+              className="3xl:hidden fontFamily-satoshi-bold text-white"
+            >
+              A Dynamic Business Model for Sustainable Growth and Community
+              Engagement
+            </Text>
+            <Text
+              variant="p2"
+              className="3xl:hidden fontFamily-satoshi-medium text-white leading-[110%] mt-6"
+            >
+              At Creon, we merge AI tools with the crypto and NFT markets,
+              leveraging a dynamic business model to generate profits. Our
+              commitment to innovation and decentralization allows us to
+              strengthen our market position and foster a sustainable ecosystem.
+              We empower our community, ensuring transparency and actively
+              involving NFT holders in our success.
+            </Text>
+
+            {/* larger screen */}
+            <Text
+              variant="p1"
+              className="max-3xl:hidden fontFamily-satoshi-bold text-white"
+            >
               The dynamic community driven business model of the future.
             </Text>
             <Text
               variant="p2"
-              className="fontFamily-satoshi-medium text-white leading-[110%] mt-6"
+              className="max-3xl:hidden fontFamily-satoshi-medium text-white leading-[110%] mt-6"
             >
               At Creon, we blend the power of AI tools with the dynamic crypto
               and NFT markets, utilizing an innovative business model to drive
@@ -46,6 +69,7 @@ const Profiting: FC = ({}) => {
               of the Creon network, creating a win-win scenario for both our
               community and for the projects we launch.
             </Text>
+            {/* larger screen */}
           </div>
           <div className="border-r border-grey-100 h-full" />
         </div>
