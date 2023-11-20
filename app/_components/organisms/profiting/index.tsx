@@ -1,5 +1,3 @@
-import Button from '@component/atoms/button';
-import Image from '@component/atoms/image';
 import Text from '@component/atoms/text';
 import SectionTemplate from '@component/templates/sectionTemplates';
 import { FC } from 'react';
@@ -79,6 +77,5 @@ const Profiting: FC = ({}) => {
 };
 
 const gradientClass = `text-transparent bg-clip-text bg-gradient-to-r from-blue to-purple`;
-const textLarge3xlClass = `max-3xl:hidden text-white border border-grey-100 rounded-[6px] p-[1rem] fontFamily-satoshi-medium w-max`;
 
 export default Profiting;
