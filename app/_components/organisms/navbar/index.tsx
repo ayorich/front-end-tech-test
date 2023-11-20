@@ -11,7 +11,7 @@ const NavBar: FC = ({}) => {
         alt="logo"
         width={140}
         height={39}
-        className="w-[140px] h-[39px]"
+        className="lg:w-[120px] lg:h-[33px] 3xl:w-[140px] 3xl:h-[39px]"
       />
 
       <div className="flex">
@@ -21,7 +21,7 @@ const NavBar: FC = ({}) => {
           <MenuItem text="AI Revenue" comingSoon />
           <MenuItem text="AI Launchpad" comingSoon />
         </ul>
-        <Button className="min-w-[132px] flex w-auto h-[44px] justify-center items-center transition-all duration-250 ease-out border-[2px] border-white bg-transparent rounded-[2px] text-white text-[18px] font-satoshi-bold ml-[6rem] cursor-pointer hover:bg-blue hover:border-blue">
+        <Button className="lg:min-w-[110px] lg:h-[38px] 3xl:min-w-[132px] 3xl:h-[44px] flex w-auto  justify-center items-center transition-all duration-250 ease-out border-[2px] border-white bg-transparent rounded-[6px] text-white text-[18px] font-satoshi-bold ml-[6rem] cursor-pointer hover:bg-blue hover:border-blue">
           connect
         </Button>
       </div>

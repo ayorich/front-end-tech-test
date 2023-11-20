@@ -17,6 +17,10 @@ const config: Config = {
         purple: '#AB23FF',
         blue: '#3d8bff',
       },
+      screens: {
+        '3xl': '1920px',
+        // => @media (min-width: 640px) { ... }
+      },
     },
   },
   plugins: [],
