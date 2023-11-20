@@ -40,18 +40,14 @@ const Hero: FC = ({}) => {
           </Text>
           <Text
             variant="p"
-            className="absolute 3xl:hidden  3xl:text-[22px] w-max  fontFamily-satoshi-bold leading-[170%] text-transparent bg-clip-text bg-gradient-to-r from-blue to-purple
-             before:absolute before:left-0 before:w-full before:h-[1px] before:bg-gradient-to-r from-blue to-purple
-             after:absolute after:left-0 after:bottom-0 after:w-full after:h-[1px] after:bg-gradient-to-r from-blue to-purple"
+            className={`3xl:hidden 3xl:text-[22px] ${highlightClasses}`}
           >
             Creon «Create On» confidential AI Tools for granting access through
             NFTs.
           </Text>
           <Text
             variant="p"
-            className="absolute max-3xl:hidden lg:text-[18px]  w-max  fontFamily-satoshi-bold leading-[170%] text-transparent bg-clip-text bg-gradient-to-r from-blue to-purple
-             before:absolute before:left-0 before:w-full before:h-[1px] before:bg-gradient-to-r from-blue to-purple
-             after:absolute after:left-0 after:bottom-0 after:w-full after:h-[1px] after:bg-gradient-to-r from-blue to-purple"
+            className={`max-3xl:hidden lg:text-[18px] ${highlightClasses}`}
           >
             Hold the Creon Pass NFT and earn passive income from AI Tools
           </Text>
@@ -60,5 +56,10 @@ const Hero: FC = ({}) => {
     </div>
   );
 };
+
+const highlightClasses = `absolute w-max  fontFamily-satoshi-bold leading-[170%] text-transparent 
+                          bg-clip-text bg-gradient-to-r from-blue to-purple
+                          before:absolute before:left-0 before:w-full before:h-[1px] before:bg-gradient-to-r from-blue to-purple
+                          after:absolute after:left-0 after:bottom-0 after:w-full after:h-[1px] after:bg-gradient-to-r from-blue to-purple`;
 
 export default Hero;
