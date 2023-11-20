@@ -27,7 +27,7 @@ const Text: FC<TextProps> = ({
       return (
         <h3
           {...restProps}
-          className={`ont-bold lg:text-[28px] 3xl:text-[38px] fontFamily-monument lg:leading-[110%] 3xl:leading-[115%] ${className}`}
+          className={`font-bold lg:text-[28px] 3xl:text-[38px] fontFamily-monument lg:leading-[110%] 3xl:leading-[115%] ${className}`}
         >
           {children}
         </h3>

@@ -1,3 +1,4 @@
+import Blog from '@component/organisms/blog';
 import ComingSoon from '@component/organisms/comingSoon';
 import CreonPass from '@component/organisms/creonPass';
 import Hero from '@component/organisms/hero';
@@ -15,6 +16,7 @@ export default function Home() {
         <Profiting />
         <OurMission />
         <ComingSoon />
+        <Blog />
       </div>
     </div>
   );
