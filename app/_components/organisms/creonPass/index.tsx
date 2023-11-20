@@ -5,7 +5,7 @@ import { FC } from 'react';
 
 const CreonPass: FC = ({}) => {
   return (
-    <div className="flex flex-row w-[70%] mx-auto py-16">
+    <div className="flex flex-row w-[70%] mx-auto py-16 gap-x-8">
       <div className="basis-1/2">
         <Text variant="h1" className="uppercase">
           creon pass nft
@@ -73,7 +73,18 @@ const CreonPass: FC = ({}) => {
           Buy Creon Pass
         </Button>
       </div>
-      <div className="basis-1/2">02</div>
+      <div className="basis-1/2 relative">
+        <video
+          className="w-full h-full object-cover"
+          autoPlay
+          muted
+          loop
+          controls={false}
+        >
+          <source src={`/videos/NFT.mp4`} type="video/mp4"></source>
+        </video>
+        <div className="absolute top-0 right-0 bottom-0 left-0 bg-gradient-to-tl from-blue to-purple mix-blend-soft-light transform rotate-180"></div>
+      </div>
     </div>
   );
 };

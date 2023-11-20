@@ -4,7 +4,7 @@ import { FC } from 'react';
 
 const Hero: FC = ({}) => {
   return (
-    <div className="relative h-screen">
+    <div className="relative h-screen mb-8">
       <div className="absolute left-0 top-0 w-full h-full z-[-1] object-cover">
         <video
           className="w-full h-full object-cover"
