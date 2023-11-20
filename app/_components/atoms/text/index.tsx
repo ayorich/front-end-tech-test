@@ -30,35 +30,26 @@ const Text: FC<TextProps> = ({
       return (
         <h3
           {...restProps}
-          className={`text-2xl font-bold text-white ${className}`}
+          className={`text-2xl font-bold lg:text-[28px] 3xl:text-[38px] fontFamily-monument lg:leading-[110%] 3xl:leading-[115%] ${className}`}
         >
           {children}
         </h3>
       );
     case 'h4':
       return (
-        <h4
-          {...restProps}
-          className={`text-xl font-bold text-white ${className}`}
-        >
+        <h4 {...restProps} className={`text-xl font-bold  ${className}`}>
           {children}
         </h4>
       );
     case 'h5':
       return (
-        <h5
-          {...restProps}
-          className={`text-lg font-bold text-white ${className}`}
-        >
+        <h5 {...restProps} className={`text-lg font-bold  ${className}`}>
           {children}
         </h5>
       );
     case 'h6':
       return (
-        <h6
-          {...restProps}
-          className={`text-base font-bold text-white ${className}`}
-        >
+        <h6 {...restProps} className={`text-base font-bold  ${className}`}>
           {children}
         </h6>
       );
