@@ -16,10 +16,13 @@ const config: Config = {
       colors: {
         purple: '#AB23FF',
         blue: '#3d8bff',
+        grey: {
+          100: '#13171D',
+        },
       },
       screens: {
         '3xl': '1920px',
-        // => @media (min-width: 640px) { ... }
+        // => @media (min-width: 1920px) { ... }
       },
     },
   },

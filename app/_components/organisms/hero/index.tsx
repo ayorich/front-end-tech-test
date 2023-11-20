@@ -25,30 +25,18 @@ const Hero: FC = ({}) => {
       />
       <div className="w-full h-full flex items-end flex-col justify-end pb-16">
         <div className="w-[70%] mx-auto">
-          <Text
-            variant="h1"
-            className="w-full lg:text-[44px] 3xl:hidden lg:leading-[110%] fontFamily-monument  uppercase mb-4"
-          >
+          <Text variant="h1" className="w-full 3xl:hidden uppercase mb-4">
             Empowering AI-Crypto Innovations and Integrating AI Tools into
             crypto.
           </Text>
-          <Text
-            variant="h1"
-            className="w-full 3xl:text-[68px] max-3xl:hidden 3xl:leading-[115%] fontFamily-monument  uppercase mb-4"
-          >
+          <Text variant="h1" className="w-full max-3xl:hidden  uppercase mb-4">
             The world's first platform for Tokenizing AI blockchain projects
           </Text>
-          <Text
-            variant="p"
-            className={`3xl:hidden 3xl:text-[22px] ${highlightClasses}`}
-          >
+          <Text variant="p1" className={`3xl:hidden ${highlightClasses}`}>
             Creon «Create On» confidential AI Tools for granting access through
             NFTs.
           </Text>
-          <Text
-            variant="p"
-            className={`max-3xl:hidden lg:text-[18px] ${highlightClasses}`}
-          >
+          <Text variant="p1" className={`max-3xl:hidden ${highlightClasses}`}>
             Hold the Creon Pass NFT and earn passive income from AI Tools
           </Text>
         </div>

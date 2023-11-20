@@ -12,7 +12,7 @@ const Text: FC<TextProps> = ({
       return (
         <h1
           {...restProps}
-          className={`text-4xl font-bold text-white ${className}`}
+          className={`font-bold text-white lg:text-[44px] 3xl:text-[68px] fontFamily-monument lg:leading-[120%] 3xl:leading-[115%] ${className}`}
         >
           {children}
         </h1>
@@ -62,10 +62,28 @@ const Text: FC<TextProps> = ({
           {children}
         </h6>
       );
+    case 'p1':
+      return (
+        <p
+          {...restProps}
+          className={`text-base lg:text-[18px] 3xl:text-[22px] ${className}`}
+        >
+          {children}
+        </p>
+      );
+    case 'p2':
+      return (
+        <p
+          {...restProps}
+          className={`text-base lg:text-[16px] 3xl:text-[18px] ${className}`}
+        >
+          {children}
+        </p>
+      );
     case 'p':
     default:
       return (
-        <p {...restProps} className={`text-base text-white ${className}`}>
+        <p {...restProps} className={`text-base ${className}`}>
           {children}
         </p>
       );
