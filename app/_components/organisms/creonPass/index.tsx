@@ -1,5 +1,4 @@
 import Button from '@component/atoms/button';
-import Image from '@component/atoms/image';
 import Text from '@component/atoms/text';
 import SectionTemplate from '@component/templates/sectionTemplates';
 import { FC } from 'react';
