@@ -1,5 +1,6 @@
 import Image from '@component/atoms/image';
 import Text from '@component/atoms/text';
+import Accordion from '@component/molecules/accordion';
 import SectionTemplate from '@component/templates/sectionTemplates';
 import { FC } from 'react';
 
@@ -34,7 +35,9 @@ const OurMission: FC<{ className?: string }> = ({ className }) => {
             />
           </div>
         </div>
-        <div className="col-span-1"></div>
+        <div className="col-span-1">
+          <Accordion />
+        </div>
       </div>
     </SectionTemplate>
   );

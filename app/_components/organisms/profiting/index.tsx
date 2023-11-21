@@ -29,7 +29,7 @@ const Profiting: FC<{ className?: string }> = ({ className }) => {
         </div>
         <div className="col-span-1 flex justify-between">
           <div className="border-l border-grey-100 h-full" />
-          <div className="w-[85%] flex align-center flex-col justify-center">
+          <div className="w-[85%] flex items-center flex-col justify-center">
             <Text
               variant="p1"
               className="3xl:hidden fontFamily-satoshi-bold text-white"
