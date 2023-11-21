@@ -12,7 +12,7 @@ const Text: FC<TextProps> = ({
       return (
         <h1
           {...restProps}
-          className={`font-bold text-white md:text-[44px] lg:text-[44px] 3xl:text-[68px] fontFamily-monument lg:leading-[120%] 3xl:leading-[115%] ${className}`}
+          className={`font-bold text-white text-[32px] md:text-[44px] lg:text-[44px] 3xl:text-[68px] fontFamily-monument lg:leading-[120%] 3xl:leading-[115%] ${className}`}
         >
           {children}
         </h1>
@@ -27,7 +27,7 @@ const Text: FC<TextProps> = ({
       return (
         <h3
           {...restProps}
-          className={`font-bold md:text-[28px] lg:text-[28px] 3xl:text-[38px] fontFamily-monument lg:leading-[110%] 3xl:leading-[115%] ${className}`}
+          className={`font-bold text-[22px] md:text-[28px] lg:text-[28px] 3xl:text-[38px] fontFamily-monument lg:leading-[110%] 3xl:leading-[115%] ${className}`}
         >
           {children}
         </h3>

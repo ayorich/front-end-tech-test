@@ -11,12 +11,15 @@ const Profiting: FC<{ className?: string }> = ({ className }) => {
         </Text>
       </div>
       <div className="flex w-full justify-end mb-2">
-        <Text variant="h3" className={`uppercase w-max ${gradientClass}`}>
+        <Text
+          variant="h3"
+          className={`uppercase w-min sm:w-max ${gradientClass}`}
+        >
           AI Innovation & Decentralization
         </Text>
       </div>
       <div className="grid grid-cols-3 w-full gap-6 my-8 lg:h-[70vh] xl:h-[auto]">
-        <div className="md:col-span-3 lg:col-span-2 rounded-[6px] overflow-hidden">
+        <div className="col-span-3 md:col-span-3 lg:col-span-2 rounded-[6px] overflow-hidden">
           <video
             className="w-full h-full object-cover"
             autoPlay
@@ -27,7 +30,7 @@ const Profiting: FC<{ className?: string }> = ({ className }) => {
             <source src={`/videos/profit-video.mp4`} type="video/mp4"></source>
           </video>
         </div>
-        <div className="md:col-span-3 lg:col-span-1 lg:flex justify-between">
+        <div className="col-span-3 md:col-span-3 lg:col-span-1 lg:flex justify-between">
           <div className="border-l border-grey-100 h-full max-lg:hidden" />
           <div className="border-t border-grey-100 w-full lg:hidden mb-8" />
           <div className="md:w-full lg:w-[85%] flex lg:items-center flex-col justify-center">

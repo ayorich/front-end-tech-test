@@ -5,7 +5,7 @@ import ComingCardProps from './types';
 
 const ComingCard: FC<ComingCardProps> = ({ title, subTitle, content }) => {
   return (
-    <div className="bg-grey-100 rounded-[6px] py-6 cursor-pointer relative md:h-[70vh] lg:h-[84vh] 2xl:h-[87vh]">
+    <div className="bg-grey-100 rounded-[6px] py-6 cursor-pointer relative h-[90vh] md:h-[70vh] lg:h-[84vh] 2xl:h-[87vh]">
       <Text className="absolute top-[-10px] right-8 rounded-[100px] px-[10px] py-[2px] justify-center  uppercase flex text-black bg-white text-[12px] fontFamily-satoshi-bold">
         Coming soon
       </Text>
@@ -33,7 +33,7 @@ const ComingCard: FC<ComingCardProps> = ({ title, subTitle, content }) => {
         </div>
       </div>
       <div className="w-[90%] mx-auto mb-4">
-        <Text variant="p2" className="fontFamily-satoshi-meduim text-white">
+        <Text variant="p2" className="fontFamily-satoshi-medium text-white">
           {content}
         </Text>
       </div>

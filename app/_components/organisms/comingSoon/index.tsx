@@ -12,8 +12,8 @@ const ComingSoon: FC<{ className?: string }> = ({ className }) => {
   return (
     <SectionTemplate className={className} scroller={width < 1024}>
       <div className="max-lg:w-[100%] max-lg:pr-[30px] max-lg:overflow-x-scroll max-lg:scroll-smooth max-lg:snap-x">
-        <div className="max-lg:w-max max-lg:flex max-lg:gap-[25px]  lg:grid lg:grid-cols-3 lg:w-full lg:gap-6 my-8">
-          <div className="max-lg:w-[40vw] lg:col-span-1 max-lg:snap-start">
+        <div className="max-lg:w-max max-lg:flex   lg:grid lg:grid-cols-3 lg:w-full max-sm:gap-[15px] max-lg:gap-[25px] lg:gap-6 my-8">
+          <div className="max-md:w-[75vw] max-lg:w-[40vw] lg:col-span-1 max-lg:snap-start">
             <ComingCard
               title="token"
               subTitle="The Gateway token to the world of AI"
@@ -24,14 +24,14 @@ const ComingSoon: FC<{ className?: string }> = ({ className }) => {
           pre-launch investment prospects.`}
             />
           </div>
-          <div className="max-lg:w-[40vw] max-lg:snap-start lg:col-span-1">
+          <div className="max-md:w-[75vw] max-lg:w-[40vw] max-lg:snap-start lg:col-span-1">
             <ComingCard
               title="revenue"
               subTitle="Driving income and growth through decentralization"
               content={`CREON NFT and token holders are integral participants in the profit-sharing from our launched AI-based enterprises. We support the development of AI tools, ensuring a steady revenue stream, all while allowing early investors to enjoy the benefits of their support.`}
             />
           </div>
-          <div className="max-lg:w-[40vw] max-lg:snap-start lg:col-span-1">
+          <div className="max-md:w-[75vw] max-lg:w-[40vw] max-lg:snap-start lg:col-span-1">
             <ComingCard
               title="launchpad"
               subTitle="Driving the future of AI Innovation"

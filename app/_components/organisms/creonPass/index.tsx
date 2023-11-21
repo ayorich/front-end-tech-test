@@ -20,8 +20,10 @@ const CreonPass: FC<{ className?: string }> = ({ className }) => {
       </Text>
       {/* screen max-768px */}
 
-      <div className="flex flex-row gap-x-8">
-        <div className="md:basis-2/5 lg:basis-1/2">
+      <div className="grid md:flex flex-row gap-x-8">
+        <div className="max-md:order-2 md:basis-2/5 lg:basis-1/2">
+          {/* screen min-768px */}
+
           <Text variant="h1" className="uppercase max-lg:hidden">
             creon pass nft
           </Text>
@@ -42,8 +44,9 @@ const CreonPass: FC<{ className?: string }> = ({ className }) => {
             launchpad, and a ticket to generate passive income through AI-driven
             tools
           </Text>
+          {/* screen min-768px */}
 
-          <div className="md:flex md:flex-col lg:grid grid-cols-2 w-full gap-4">
+          <div className="grid md:flex md:flex-col lg:grid grid-cols-2 w-full gap-4">
             <Text
               variant="p2"
               className="col-span-2 3xl:hidden text-white border border-grey-100 rounded-[6px] p-[1rem] basis-full"
@@ -54,14 +57,14 @@ const CreonPass: FC<{ className?: string }> = ({ className }) => {
             </Text>
             <Text
               variant="p2"
-              className="3xl:hidden text-white border border-grey-100 rounded-[6px] p-[1rem] md:basis-full lg:basis-1/2"
+              className="3xl:hidden text-white border border-grey-100 rounded-[6px] p-[1rem] max-md:basis-1/2 md:basis-full lg:basis-1/2"
             >
               The possibility of allocating investments into new, exceptional
               tokenized AI tools through Creon Launchpad.
             </Text>
             <Text
               variant="p2"
-              className="3xl:hidden text-white border border-grey-100 rounded-[6px] p-[1rem] md:basis-full lg:basis-1/2"
+              className="3xl:hidden text-white border border-grey-100 rounded-[6px] p-[1rem] max-md:basis-1/2 md:basis-full lg:basis-1/2"
             >
               Early access to allocations in inspiring tokenized projects, real
               businesses based on AI.
@@ -85,11 +88,11 @@ const CreonPass: FC<{ className?: string }> = ({ className }) => {
           </div>
           {/* larger screen */}
 
-          <Button className="md:w-full lg:w-[50%] 3xl:w-max lg:h-[46px] 3xl:h-[54px] md:mt-6 lg:mt-8  3xl:px-40 3xl:mt-16 flex w-auto justify-center items-center transition-all duration-250 ease-out rounded-[6px] text-white text-[18px] font-satoshi-bold cursor-pointer bg-gradient-to-r from-blue to-purple">
+          <Button className="md:w-full lg:w-[50%] 3xl:w-max lg:h-[46px] 3xl:h-[54px] mt-6 md:mt-6 lg:mt-8  3xl:px-40 3xl:mt-16 flex w-auto justify-center items-center transition-all duration-250 ease-out rounded-[6px] text-white text-[18px] font-satoshi-bold cursor-pointer bg-gradient-to-r from-blue to-purple">
             Buy Creon Pass
           </Button>
         </div>
-        <div className="md:basis-3/5 lg:basis-1/2 relative">
+        <div className="max-md:h-[60vh] max-md:order-1 md:basis-3/5 lg:basis-1/2 relative">
           <video
             className="w-full h-full object-cover"
             autoPlay
