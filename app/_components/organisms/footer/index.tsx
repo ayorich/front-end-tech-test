@@ -5,7 +5,7 @@ import { FC } from 'react';
 
 const Footer: FC = ({}) => {
   return (
-    <div className="flex justify-between my-[1rem] w-[70%] mx-auto">
+    <div className="flex justify-between my-[1rem] w-[90%] 3xl:w-[70%] mx-auto">
       <div className="">
         <Text variant="p2" className="text-[16px] text-white">
           © Creon 2023. All rights reserved.

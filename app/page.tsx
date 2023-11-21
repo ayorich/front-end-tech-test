@@ -13,7 +13,7 @@ export default function Home() {
       <div>
         <NavBar />
         <Hero />
-        <div className="flex flex-col">
+        <div className="flex flex-col overflow-hidden">
           <CreonPass className="order-4 md:order-4 lg:order-4 3xl:order-1" />
           <Profiting className="order-2 md:order-2 lg:order-2 3xl:order-2" />
           <OurMission className="order-1 md:order-1 lg:order-1 3xl:order-3" />

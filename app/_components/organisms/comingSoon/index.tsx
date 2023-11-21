@@ -1,13 +1,18 @@
+'use client';
+
 import Text from '@component/atoms/text';
 import ComingCard from '@component/molecules/comingCard';
 import SectionTemplate from '@component/templates/sectionTemplates';
+import useWindowDimensions from '@hooks/useWindowDimensions';
 import { FC } from 'react';
 
 const ComingSoon: FC<{ className?: string }> = ({ className }) => {
+  const { width } = useWindowDimensions();
+
   return (
-    <SectionTemplate className={className}>
-      <div className="max-lg:w-[100vw] max-lg:overflow-x-scroll max-lg:scroll-smooth max-lg:snap-x">
-        <div className="max-lg:w-max max-lg:flex max-lg:gap-[25px] max-lg:pr-[5rem] lg:grid lg:grid-cols-3 lg:w-full lg:gap-6 my-8">
+    <SectionTemplate className={className} scroller={width < 1024}>
+      <div className="max-lg:w-[100%] max-lg:pr-[30px] max-lg:overflow-x-scroll max-lg:scroll-smooth max-lg:snap-x">
+        <div className="max-lg:w-max max-lg:flex max-lg:gap-[25px]  lg:grid lg:grid-cols-3 lg:w-full lg:gap-6 my-8">
           <div className="max-lg:w-[40vw] lg:col-span-1 max-lg:snap-start">
             <ComingCard
               title="token"

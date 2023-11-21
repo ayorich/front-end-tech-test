@@ -1,15 +1,29 @@
+import { FC } from 'react';
 import Image from '@component/atoms/image';
 import Text from '@component/atoms/text';
 import Accordion from '@component/molecules/accordion';
 import SectionTemplate from '@component/templates/sectionTemplates';
-import { FC } from 'react';
 
 const OurMission: FC<{ className?: string }> = ({ className }) => {
   return (
     <SectionTemplate className={className}>
-      <div className="grid grid-cols-2 w-full lg:gap-12 3xl:gap-6 my-8">
-        <div className="col-span-1">
-          <Text variant="h3" className="3xl:hidden text-white uppercase">
+      <Text
+        variant="h3"
+        className="lg:hidden 3xl:hidden text-white uppercase mb-[4rem]"
+      >
+        our mission is to provide unique, confidential AI-based tools, to which
+        you will gain
+        <Text className={`${gradientClass} ml-2`}>
+          lifetime access through NFT tokens and our CREON token.
+        </Text>
+      </Text>
+
+      <div className="grid md:grid-cols-6 lg:grid-cols-2 w-full lg:gap-12 3xl:gap-6 my-8">
+        <div className="relative md:flex md:items-end md:order-2 lg:block lg:order-1 md:col-span-2 lg:col-span-1">
+          <Text
+            variant="h3"
+            className="max-lg:hidden 3xl:hidden text-white uppercase"
+          >
             our mission is to provide unique, confidential AI-based tools, to
             which you will gain
             <Text className={`${gradientClass} ml-2`}>
@@ -26,7 +40,7 @@ const OurMission: FC<{ className?: string }> = ({ className }) => {
           </Text>
           {/* larger screen */}
 
-          <div className="lg:top-[-2rem] 3xl:mt-8 3xl:mr-[-2rem] relative 3xl:right-[-10rem]">
+          <div className="md:scale-[250%] lg:scale-[100%] lg:top-[-2rem] 3xl:mt-8 3xl:mr-[-2rem] relative 3xl:right-[-10rem]">
             <Image
               alt="our mission"
               src="/images/ourmission.png"
@@ -35,7 +49,7 @@ const OurMission: FC<{ className?: string }> = ({ className }) => {
             />
           </div>
         </div>
-        <div className="col-span-1">
+        <div className="md:order-1 lg:order-2 md:col-span-4 lg:col-span-1">
           <Accordion />
         </div>
       </div>

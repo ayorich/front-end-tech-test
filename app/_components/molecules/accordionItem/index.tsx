@@ -14,8 +14,8 @@ const AccordionItem: FC<AccordionItemProps> = ({
 }) => {
   return (
     <div
-      className={`cursor-pointer grid grid-cols-8 w-full gap-0 mb-[3rem] border-b-solid border-b-grey-100 border-b-[1px]  transition-all duration-250 ease-out ${
-        active ? 'pb-[2rem]' : 'pb-[3rem]'
+      className={`cursor-pointer grid grid-cols-8 w-full gap-0  md:mb-[2rem] lg:mb-[3rem] border-b-solid border-b-grey-100 border-b-[1px]  transition-all duration-250 ease-out ${
+        active ? 'pb-[2rem]' : 'lg:pb-[3rem] md:pb-[2rem]'
       } `}
       onClick={() => onClick(id)}
     >
