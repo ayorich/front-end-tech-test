@@ -19,6 +19,7 @@ const CreonPass: FC<{ className?: string }> = ({ className }) => {
         development. Only NFT holders will have the ability to use a given tool.
       </Text>
       {/* screen max-768px */}
+
       <div className="flex flex-row gap-x-8">
         <div className="md:basis-2/5 lg:basis-1/2">
           <Text variant="h1" className="uppercase max-lg:hidden">
