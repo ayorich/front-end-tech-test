@@ -3,9 +3,9 @@ import Text from '@component/atoms/text';
 import SectionTemplate from '@component/templates/sectionTemplates';
 import { FC } from 'react';
 
-const OurMission: FC = ({}) => {
+const OurMission: FC<{ className?: string }> = ({ className }) => {
   return (
-    <SectionTemplate>
+    <SectionTemplate className={className}>
       <div className="grid grid-cols-2 w-full gap-6 my-8">
         <div className="col-span-1">
           <Text variant="h3" className="3xl:hidden text-white uppercase">

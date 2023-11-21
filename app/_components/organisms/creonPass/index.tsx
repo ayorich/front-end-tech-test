@@ -3,9 +3,9 @@ import Text from '@component/atoms/text';
 import SectionTemplate from '@component/templates/sectionTemplates';
 import { FC } from 'react';
 
-const CreonPass: FC = ({}) => {
+const CreonPass: FC<{ className?: string }> = ({ className }) => {
   return (
-    <SectionTemplate>
+    <SectionTemplate className={className}>
       <div className="flex flex-row gap-x-8">
         <div className="basis-1/2">
           <Text variant="h1" className="uppercase">

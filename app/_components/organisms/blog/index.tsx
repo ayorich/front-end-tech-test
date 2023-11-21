@@ -4,9 +4,9 @@ import BlogCard from '@component/molecules/blogCard';
 import SectionTemplate from '@component/templates/sectionTemplates';
 import { FC } from 'react';
 
-const Blog: FC = ({}) => {
+const Blog: FC<{ className?: string }> = ({ className }) => {
   return (
-    <SectionTemplate>
+    <SectionTemplate className={className}>
       <BlogCard
         title="AI Prospects, Market Size, and Development Pace"
         content={`The AI market is one of the most dynamically growing areas of

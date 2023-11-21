@@ -2,9 +2,9 @@ import Text from '@component/atoms/text';
 import SectionTemplate from '@component/templates/sectionTemplates';
 import { FC } from 'react';
 
-const Profiting: FC = ({}) => {
+const Profiting: FC<{ className?: string }> = ({ className }) => {
   return (
-    <SectionTemplate>
+    <SectionTemplate className={className}>
       <div className="flex w-full mb-2">
         <Text variant="h1" className="uppercase w-max">
           Profiting Through

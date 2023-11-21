@@ -3,9 +3,9 @@ import ComingCard from '@component/molecules/comingCard';
 import SectionTemplate from '@component/templates/sectionTemplates';
 import { FC } from 'react';
 
-const ComingSoon: FC = ({}) => {
+const ComingSoon: FC<{ className?: string }> = ({ className }) => {
   return (
-    <SectionTemplate>
+    <SectionTemplate className={className}>
       <div className="grid grid-cols-3 w-full gap-6 my-8">
         <div className="col-span-1">
           <ComingCard
