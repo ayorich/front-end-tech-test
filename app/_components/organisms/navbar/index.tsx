@@ -15,7 +15,7 @@ const NavBar: FC = ({}) => {
       />
 
       <div className="flex">
-        <ul className="flex items-center gap-[20px] list-none">
+        <ul className="flex items-center gap-[20px] list-none max-3xl:hidden">
           <MenuItem text="Creon Pass" />
           <MenuItem text="Token" comingSoon />
           <MenuItem text="AI Revenue" comingSoon />

@@ -15,8 +15,8 @@ const Profiting: FC<{ className?: string }> = ({ className }) => {
           AI Innovation & Decentralization
         </Text>
       </div>
-      <div className="grid grid-cols-3 w-full gap-6 my-8">
-        <div className="col-span-2 rounded-[6px] overflow-hidden">
+      <div className="grid grid-cols-3 w-full gap-6 my-8 lg:h-[70vh] xl:h-[auto]">
+        <div className="md:col-span-3 lg:col-span-2 rounded-[6px] overflow-hidden">
           <video
             className="w-full h-full object-cover"
             autoPlay
@@ -27,9 +27,10 @@ const Profiting: FC<{ className?: string }> = ({ className }) => {
             <source src={`/videos/profit-video.mp4`} type="video/mp4"></source>
           </video>
         </div>
-        <div className="col-span-1 flex justify-between">
-          <div className="border-l border-grey-100 h-full" />
-          <div className="w-[85%] flex items-center flex-col justify-center">
+        <div className="md:col-span-3 lg:col-span-1 lg:flex justify-between">
+          <div className="border-l border-grey-100 h-full max-lg:hidden" />
+          <div className="border-t border-grey-100 w-full lg:hidden mb-8" />
+          <div className="md:w-full lg:w-[85%] flex lg:items-center flex-col justify-center">
             <Text
               variant="p1"
               className="3xl:hidden fontFamily-satoshi-bold text-white"
@@ -39,7 +40,7 @@ const Profiting: FC<{ className?: string }> = ({ className }) => {
             </Text>
             <Text
               variant="p2"
-              className="3xl:hidden fontFamily-satoshi-medium text-white leading-[110%] mt-6"
+              className="3xl:hidden fontFamily-satoshi-medium text-white leading-[110%] md:mt-4 lg:mt-6"
             >
               At Creon, we merge AI tools with the crypto and NFT markets,
               leveraging a dynamic business model to generate profits. Our
@@ -69,7 +70,8 @@ const Profiting: FC<{ className?: string }> = ({ className }) => {
             </Text>
             {/* larger screen */}
           </div>
-          <div className="border-r border-grey-100 h-full" />
+          <div className="border-r border-grey-100 h-full max-lg:hidden" />
+          <div className="border-t border-grey-100 w-full lg:hidden mt-8" />
         </div>
       </div>
     </SectionTemplate>

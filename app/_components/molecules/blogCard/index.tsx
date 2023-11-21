@@ -6,8 +6,8 @@ import BlogCardProps from './types';
 const BlogCard: FC<BlogCardProps> = ({ title, content, src }) => {
   return (
     <div className="grid grid-cols-3 w-full gap-6 my-8 bg-grey-100 bg-opacity-40 rounded-[6px] overflow-hidden">
-      <div className="col-span-2 p-8">
-        <Text variant="h3" className="text-white mb-4">
+      <div className="col-span-2 md:p-4 lg:p-8">
+        <Text variant="h3" className="text-white mb-4 uppercase">
           {title}
         </Text>
         <Text variant="p2" className="text-white">

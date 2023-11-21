@@ -15,7 +15,7 @@ const AccordionItem: FC<AccordionItemProps> = ({
   return (
     <div
       className={`cursor-pointer grid grid-cols-8 w-full gap-0 mb-[3rem] border-b-solid border-b-grey-100 border-b-[1px]  transition-all duration-250 ease-out ${
-        active ? 'pb-[3rem]' : 'pb-[4.5rem]'
+        active ? 'pb-[2rem]' : 'pb-[3rem]'
       } `}
       onClick={() => onClick(id)}
     >
@@ -24,7 +24,7 @@ const AccordionItem: FC<AccordionItemProps> = ({
       </div>
       <div className="col-span-6 transition-all duration-250 ease-out">
         <div className="flex justify-between items-center transition-all duration-250 ease-out">
-          <Text variant="p1" className="text-white">
+          <Text variant="p1" className="text-white min-h-[54px]">
             {title}
           </Text>
           <Image

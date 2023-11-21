@@ -12,7 +12,7 @@ const Text: FC<TextProps> = ({
       return (
         <h1
           {...restProps}
-          className={`font-bold text-white lg:text-[44px] 3xl:text-[68px] fontFamily-monument lg:leading-[120%] 3xl:leading-[115%] ${className}`}
+          className={`font-bold text-white md:text-[44px] lg:text-[44px] 3xl:text-[68px] fontFamily-monument lg:leading-[120%] 3xl:leading-[115%] ${className}`}
         >
           {children}
         </h1>
@@ -27,7 +27,7 @@ const Text: FC<TextProps> = ({
       return (
         <h3
           {...restProps}
-          className={`font-bold lg:text-[28px] 3xl:text-[38px] fontFamily-monument lg:leading-[110%] 3xl:leading-[115%] ${className}`}
+          className={`font-bold md:text-[28px] lg:text-[28px] 3xl:text-[38px] fontFamily-monument lg:leading-[110%] 3xl:leading-[115%] ${className}`}
         >
           {children}
         </h3>
@@ -54,7 +54,7 @@ const Text: FC<TextProps> = ({
       return (
         <p
           {...restProps}
-          className={`lg:text-[18px] 3xl:text-[22px] ${className}`}
+          className={`md:text-[18px] lg:text-[18px] 3xl:text-[22px] ${className}`}
         >
           {children}
         </p>
@@ -63,7 +63,7 @@ const Text: FC<TextProps> = ({
       return (
         <p
           {...restProps}
-          className={`lg:text-[16px] 3xl:text-[18px] ${className}`}
+          className={`md:text-[16px] lg:text-[16px] 3xl:text-[18px] ${className}`}
         >
           {children}
         </p>

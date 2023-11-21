@@ -7,7 +7,7 @@ import { FC } from 'react';
 const OurMission: FC<{ className?: string }> = ({ className }) => {
   return (
     <SectionTemplate className={className}>
-      <div className="grid grid-cols-2 w-full gap-6 my-8">
+      <div className="grid grid-cols-2 w-full lg:gap-12 3xl:gap-6 my-8">
         <div className="col-span-1">
           <Text variant="h3" className="3xl:hidden text-white uppercase">
             our mission is to provide unique, confidential AI-based tools, to
