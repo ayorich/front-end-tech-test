@@ -4,8 +4,8 @@ import './styles.css';
 import Image from '@component/atoms/image';
 const Hexagon: FC<HexagonProps> = ({ active, icon }) => {
   return (
-    <div className="absolute w-[8rem] h-[8rem] flex items-center justify-center lg:scale-75 2xl:scale-1 top-[-40px] mr-[-40px]">
-      <div className="hex">
+    <div className="absolute w-[8rem] h-[8rem] flex items-center justify-center lg:scale-75 2xl:scale-1 top-[-40px] mr-[-40px] transition-all duration-250 ease-out">
+      <div className={`hex ${active ? 'active' : ''}`}>
         <div className="hex inner">
           <Image
             src={`/images/${icon}`}

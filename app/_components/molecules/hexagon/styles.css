@@ -20,6 +20,15 @@
   bottom: -59px;
   border-top: 60px solid #13171d;
 }
+.active.hex {
+  background: #fff;
+}
+.active.hex:before {
+  border-bottom: 60px solid #fff;
+}
+.active.hex:after {
+  border-top: 60px solid #fff;
+}
 
 .hex.inner {
   background-color: #2a2e33;
