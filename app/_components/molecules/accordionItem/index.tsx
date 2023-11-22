@@ -19,10 +19,10 @@ const AccordionItem: FC<AccordionItemProps> = ({
       } `}
       onClick={() => onClick(id)}
     >
-      <div className="max-md:ml-[-20px] col-span-1 md:col-span-2 relative">
+      <div className="max-md:ml-[-40px] col-span-1 md:col-span-2 relative">
         <Hexagon icon={icon} active={active} />
       </div>
-      <div className="col-span-7 md:col-span-6 transition-all duration-250 ease-out">
+      <div className="max-md:ml-[20px] max-md:py-[10px] col-span-7 md:col-span-6 transition-all duration-250 ease-out">
         <div className="flex justify-between items-center transition-all duration-250 ease-out">
           <Text
             variant="p1"

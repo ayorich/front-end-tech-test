@@ -5,7 +5,7 @@ import Image from '@component/atoms/image';
 
 const Hexagon: FC<HexagonProps> = ({ active, icon }) => {
   return (
-    <div className="absolute max-md:w-[4.5rem] w-[8rem] h-[8rem] flex items-center justify-center scale-50 md:scale-75 lg:scale-75 2xl:scale-1 top-[-40px] mr-[-40px] transition-all duration-250 ease-out">
+    <div className="max-md:mt-[12px] absolute  w-[8rem] h-[8rem] flex items-center justify-center scale-50 md:scale-75 lg:scale-75 2xl:scale-1 top-[-40px] mr-[-40px] transition-all duration-250 ease-out">
       <div className={`hex ${active ? 'active' : ''}`}>
         <div className="hex inner">
           <Image
