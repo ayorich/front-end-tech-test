@@ -15,7 +15,7 @@ const NavBar: FC = ({}) => {
   return (
     <div className="absolute left-0 top-0 py-[1.953vw] px-[2.93vw] flex items-center justify-between z-10 w-full">
       <Image
-        src="/images/logo.png"
+        src="/images/creon.png"
         alt="logo"
         width={140}
         height={39}
