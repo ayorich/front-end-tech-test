@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: center;
   padding: 7px;
-  width: 45px;
-  height: 45px;
+  width: 38px;
+  height: 38px;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .burger-menu.cross .bar:nth-child(1) {
-  transform: translateY(9px) rotate(-45deg);
+  transform: translateY(8px) rotate(-45deg);
 }
 
 .burger-menu.cross .bar:nth-child(2) {
@@ -23,5 +23,5 @@
 }
 
 .burger-menu.cross .bar:nth-child(3) {
-  transform: translateY(-9px) rotate(45deg);
+  transform: translateY(-8px) rotate(45deg);
 }

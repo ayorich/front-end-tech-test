@@ -22,14 +22,14 @@ const NavBar: FC = ({}) => {
         className="lg:w-[120px] lg:h-[33px] 3xl:w-[140px] 3xl:h-[39px]"
       />
 
-      <div className="flex">
+      <div className="flex items-center">
         <ul className="flex items-center gap-[20px] list-none max-3xl:hidden">
           <MenuItem text="Creon Pass" />
           <MenuItem text="Token" comingSoon />
           <MenuItem text="AI Revenue" comingSoon />
           <MenuItem text="AI Launchpad" comingSoon />
         </ul>
-        <Button className="lg:min-w-[110px] lg:h-[38px] 3xl:min-w-[132px] 3xl:h-[44px] flex w-auto  justify-center items-center transition-all duration-250 ease-out border-[2px] border-white bg-transparent rounded-[6px] text-white text-[18px] font-satoshi-bold ml-[6rem] cursor-pointer hover:bg-blue hover:border-blue">
+        <Button className="lg:min-w-[110px] h-[38px] lg:h-[38px] 3xl:min-w-[132px] 3xl:h-[44px] flex w-auto  justify-center items-center transition-all duration-250 ease-out border-[2px] border-white bg-transparent rounded-[6px] text-white text-[18px] font-satoshi-bold ml-[6rem] cursor-pointer hover:bg-blue hover:border-blue">
           connect
         </Button>
         <Hamburger open={open} onClick={onMobileMenuClicked} />
