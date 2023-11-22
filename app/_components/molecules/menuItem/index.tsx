@@ -7,7 +7,7 @@ const MenuItem: FC<MenuItemProps> = ({ text, comingSoon, ismobile }) => {
   return (
     <li
       className={`${comingSoon ? 'ml-[40px]' : ''} ${
-        ismobile ? 'max-lg:ml-[0px]' : ''
+        ismobile ? 'max-3xl:ml-[0px]' : ''
       }`}
     >
       <a
