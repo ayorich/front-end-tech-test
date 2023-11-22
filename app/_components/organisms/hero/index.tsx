@@ -33,7 +33,7 @@ const Hero: FC = ({}) => {
             crypto.
           </Text>
           <Text variant="h1" className="w-full max-3xl:hidden  uppercase mb-4">
-            The world's first platform for Tokenizing AI blockchain projects
+            {`The world's first platform for Tokenizing AI blockchain projects`}
           </Text>
           <Text variant="p1" className={`3xl:hidden ${highlightClasses}`}>
             Creon «Create On» confidential AI Tools for granting access through
