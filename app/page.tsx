@@ -20,6 +20,7 @@ export default function Home() {
           <ComingSoon className="order-5 md:order-5 lg:order-5 3xl:order-4" />
           <Blog className="order-3 md:order-3 lg:order-3 3xl:order-5" />
         </div>
+
         <Footer />
       </div>
     </div>
