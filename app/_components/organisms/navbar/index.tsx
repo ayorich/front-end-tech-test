@@ -47,7 +47,7 @@ const NavBar: FC = ({}) => {
           <Hamburger open={open} onClick={onMobileMenuClicked} />
         </div>
       </div>
-      <SideMenu isOpen={open} />
+      <SideMenu isOpen={open} onClick={onMobileMenuClicked} />
     </Fragment>
   );
 };

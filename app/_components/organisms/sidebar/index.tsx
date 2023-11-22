@@ -1,7 +1,7 @@
 import MenuItem from '@component/molecules/menuItem';
 import Image from '@component/atoms/image';
 
-const SideMenu = ({ isOpen }: SideMenuProps) => {
+const SideMenu = ({ isOpen, onClick }: SideMenuProps) => {
   const transformClasses = 'transform transition-all ease-in-out duration-300';
 
   return (
@@ -11,11 +11,13 @@ const SideMenu = ({ isOpen }: SideMenuProps) => {
           ? 'bg-[rgba(0,0,0,0.5)]'
           : 'bg-[rgba(0,0,0,0)] invisible pointer-events-none'
       }`}
+      onClick={onClick}
     >
       <div
         className={`${transformClasses} h-full w-52 lg:w-[20vw] xl:w-[15vw] bg-black pt-24 pb-8 pl-7 md:pl-4 flex flex-col justify-between ${
           isOpen ? 'translate-x-0' : 'translate-x-[100%]'
         }`}
+        onClick={(e) => e.stopPropagation()}
       >
         <div>
           <div className="border-t border-grey-100 w-full  mb-4"></div>
