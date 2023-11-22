@@ -18,8 +18,8 @@ const OurMission: FC<{ className?: string }> = ({ className }) => {
         </Text>
       </Text>
 
-      <div className="grid md:grid-cols-6 lg:grid-cols-2 w-full lg:gap-12 3xl:gap-6 my-8">
-        <div className="relative md:flex md:items-end md:order-2 lg:block lg:order-1 md:col-span-2 lg:col-span-1">
+      <div className="grid  md:grid-cols-6 lg:grid-cols-2 w-full lg:gap-12 3xl:gap-6 my-8">
+        <div className="relative md:flex md:items-end md:order-2 lg:block lg:order-1  md:col-span-2 lg:col-span-1">
           <Text
             variant="h3"
             className="max-lg:hidden 3xl:hidden text-white uppercase"
@@ -40,16 +40,17 @@ const OurMission: FC<{ className?: string }> = ({ className }) => {
           </Text>
           {/* larger screen */}
 
-          <div className="md:scale-[250%] lg:scale-[100%] lg:top-[-2rem] 3xl:mt-8 3xl:mr-[-2rem] relative 3xl:right-[-10rem]">
+          <div className="max-md:mt-[-4.5rem] max-md:w-[100vw] max-md:h-[200px] md:scale-[250%] lg:scale-[100%] lg:top-[-2rem] 3xl:mt-8 3xl:mr-[-2rem] relative 3xl:right-[-10rem]">
             <Image
               alt="our mission"
               src="/images/ourmission.png"
               height={502}
               width={836}
+              className="max-md:h-full max-md:w-full"
             />
           </div>
         </div>
-        <div className="md:order-1 lg:order-2 md:col-span-4 lg:col-span-1">
+        <div className="md:order-1 lg:order-2 col-span-6 md:col-span-4 lg:col-span-1">
           <Accordion />
         </div>
       </div>

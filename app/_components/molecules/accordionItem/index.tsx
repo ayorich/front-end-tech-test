@@ -19,12 +19,15 @@ const AccordionItem: FC<AccordionItemProps> = ({
       } `}
       onClick={() => onClick(id)}
     >
-      <div className="col-span-2 relative">
+      <div className="max-md:ml-[-20px] col-span-1 md:col-span-2 relative">
         <Hexagon icon={icon} active={active} />
       </div>
-      <div className="col-span-6 transition-all duration-250 ease-out">
+      <div className="col-span-7 md:col-span-6 transition-all duration-250 ease-out">
         <div className="flex justify-between items-center transition-all duration-250 ease-out">
-          <Text variant="p1" className="text-white min-h-[54px]">
+          <Text
+            variant="p1"
+            className="text-white max-md:flex max-md:items-center min-h-[54px]"
+          >
             {title}
           </Text>
           <Image
@@ -38,7 +41,7 @@ const AccordionItem: FC<AccordionItemProps> = ({
         {active && (
           <Text
             variant="p2"
-            className="text-white fontFamily-satoshi-medium leading-[115%] mt-[15px]"
+            className="text-white fontFamily-satoshi-medium leading-[115%] max-md:mt-0 mt-[15px]"
           >
             {content}
           </Text>

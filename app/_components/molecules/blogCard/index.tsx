@@ -5,8 +5,8 @@ import BlogCardProps from './types';
 
 const BlogCard: FC<BlogCardProps> = ({ title, content, src }) => {
   return (
-    <div className="grid grid-cols-3 w-full gap-6 my-8 bg-grey-100 bg-opacity-40 rounded-[6px] overflow-hidden">
-      <div className="col-span-2 md:p-4 lg:p-8">
+    <div className="max-md:w-[75vw] grid grid-cols-3 w-full gap-6 my-8 bg-grey-100 bg-opacity-40 rounded-[6px] overflow-hidden">
+      <div className=" order-2 col-span-3 md:col-span-2 md:p-4 lg:p-8">
         <Text variant="h3" className="text-white mb-4 uppercase">
           {title}
         </Text>
@@ -14,7 +14,7 @@ const BlogCard: FC<BlogCardProps> = ({ title, content, src }) => {
           {content}
         </Text>
       </div>
-      <div className="col-span-1">
+      <div className="order-1 col-span-3 md:col-span-1">
         <div className=" h-full relative before:w-full before:absolute before:left-0 before:bottom-0 before:top-0  before:bg-gradient-to-b before:from-purple before:to-blue before:mix-blend-color">
           <Image
             src={src}
